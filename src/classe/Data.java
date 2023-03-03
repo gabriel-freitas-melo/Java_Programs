@@ -6,6 +6,7 @@ public class Data {
 	int mes;
 	int ano;
 	
+	
 	//Construtor padrão (Default)
 	Data(){
 		dia = 1;
