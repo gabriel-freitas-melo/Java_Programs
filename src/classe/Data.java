@@ -12,7 +12,8 @@ public class Data {
 		mes = 1;
 		ano = 1900;
 	}
-	//Construtor específico
+	
+	//Construtor específico Finalizado
 	Data(int dia1, int mes1, int ano1){
 		dia = dia1;
 		mes =  mes1;

@@ -13,6 +13,7 @@ public class DataTeste {
 		System.out.println(date1.obterData());
 		System.out.println(date2.obterData());
 		System.out.println("----------");
+		System.out.println("----------");
 		date1.obterDataFormatada();
 		date2.obterDataFormatada();
 		
