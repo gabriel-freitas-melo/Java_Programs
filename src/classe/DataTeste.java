@@ -3,6 +3,8 @@ package classe;
 public class DataTeste {
 
 	public static void main(String[] args) {
+		char u = '\u0000';
+		String s = null;
 		
 		//Data Padrao(Default)
 		
@@ -17,6 +19,7 @@ public class DataTeste {
 		System.out.println("----------");
 		date1.obterDataFormatada();
 		date2.obterDataFormatada();
-		
+		System.out.println(u);
+		System.out.println(s);
 	}
 }

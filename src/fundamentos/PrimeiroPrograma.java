@@ -7,16 +7,10 @@ package fundamentos;
  */
 
 public class PrimeiroPrograma {
-	public static void main(String[] args) { // main é a entrada do programa
-		System.out.println("Gabriel Freitas Melo");// Comente na frente do seu código ou em cima
-		// Teste comentário
-		/*
-		 * 
-		 *  comentário com várias linhas
-		 *  Os comentparios não interferem no seu código*/
-		/**
-		 * 
-		 */
+	public static void main(String[] args) { 
+		System.out.println("Gabriel Freitas Melo");
+		System.out.println("O recomço dos estudos de JAVA");
+
 	}
 
 }

@@ -9,16 +9,14 @@ public class Data {
 	
 	//Construtor padrão (Default)
 	Data(){
-		dia = 1;
-		mes = 1;
-		ano = 1900;
+		this(1, 1, 1970);
 	}
 	
 	//Construtor específico Finalizado
-	Data(int dia1, int mes1, int ano1){
-		dia = dia1;
-		mes =  mes1;
-		ano = ano1;
+	Data(int dia, int mes, int ano){
+		this.dia = dia;
+		this.mes =  mes;
+		this.ano = ano;
 		
 	}
 	
@@ -28,6 +26,6 @@ public class Data {
 	//retornar vazio e pode colocar um método para retornar outro
 	//Isso se chama recursividade
 	void obterDataFormatada() {
-		System.out.println(obterData());
+		System.out.println(this.obterData());
 	}
 }

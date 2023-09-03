@@ -1,4 +1,4 @@
-package exerciciosFinaisControle;
+package controle.exerciciosFinais;
 
 import java.util.Scanner;
 
