@@ -5,6 +5,8 @@ public class DataTeste {
 	public static void main(String[] args) {
 		char u = '\u0000';
 		String s = null;
+		System.out.println(u);
+		System.out.println(s);
 		
 		//Data Padrao(Default)
 		
@@ -19,7 +21,25 @@ public class DataTeste {
 		System.out.println("----------");
 		date1.obterDataFormatada();
 		date2.obterDataFormatada();
-		System.out.println(u);
-		System.out.println(s);
+		System.out.println("----------");
+		System.out.println("----------");
+		
+		System.out.println("Atribuição por referência e valor");
+		//Atribuição por referência
+		Data date3 = date1;
+		date3.dia = 20; 
+		date1.obterDataFormatada();
+		
+		dataReturnDefault(date3);
+		
+		date1.obterDataFormatada();
+		
+		
+	}
+	//O mesmo ocorre quando passar um objeto como parâmetro de um método
+	static void dataReturnDefault(Data d) {
+		d.dia = 1;
+		d.mes = 1;
+		d.ano = 1970;
 	}
 }
