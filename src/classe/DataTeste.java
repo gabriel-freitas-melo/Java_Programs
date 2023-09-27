@@ -34,6 +34,10 @@ public class DataTeste {
 		
 		date1.obterDataFormatada();
 		
+		dataMaximaDefault(date2);
+		
+		date2.obterDataFormatada();
+		
 		
 	}
 	//O mesmo ocorre quando passar um objeto como parâmetro de um método
@@ -41,5 +45,10 @@ public class DataTeste {
 		d.dia = 1;
 		d.mes = 1;
 		d.ano = 1970;
+	}
+	static void dataMaximaDefault(Data d) {
+		d.dia = 31;
+		d.mes = 12;
+		d.ano = 2100;
 	}
 }

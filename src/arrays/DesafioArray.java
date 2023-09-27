@@ -1,6 +1,5 @@
 package arrays;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class DesafioArray {
@@ -9,18 +8,27 @@ public class DesafioArray {
 		System.out.println("Quantas notas serão inseridas?");
 		int i = entrada.nextInt();
 		double[] notas = new double[i];
-		//Inserção de forma Padrão
+	
 		for(int j = 0; j <notas.length ; j++) {
 			System.out.println("Insira a nota:");
 			notas[j] = entrada.nextDouble();
 		}
-		System.out.println(Arrays.toString(notas));
+		int j = 0;
+		int q = 1;
+		for(@SuppressWarnings("unused") double nota: notas) {
+			System.out.println("Nota" + q  + " : " + notas[j]);
+			j++;
+			q++;
+		}
+		System.out.println("Total de Notas " + -notas.length);
+		
 		double total = 0;
 		double media = 0;
-		//inserção de forma especial
+		
 		for(double nota: notas) {
 			total += nota;
 		}
+		
 		media = total / notas.length;
 		System.out.printf("média = %.2f", media);
 		entrada.close();
