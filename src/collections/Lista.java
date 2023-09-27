@@ -10,7 +10,7 @@ public class Lista {
 		//Duas formas de inserir um usuário na lista
 		Usuario u1 = new Usuario("Gabriel");
 		lista.add(u1);
-		//Pode criar uma nova instância direto no objeto
+		//Pode criar uma nova instância direto na Lista
 		lista.add(new Usuario("Ana"));
 		lista.add(new Usuario("Gustavo"));
 		lista.add(new Usuario("Daniel"));
@@ -22,7 +22,8 @@ public class Lista {
 		}
 		//Imprimindo um elemento pelo seu índice(Indexado)
 		//Segue o padrão do método toString
-		System.out.println(lista.get(2));
+		System.out.println();
+		System.out.println(lista.get(0));
 		System.out.println();
 		//Imprimindo todos os elementos usando o toString
 		for(int i = 0; i<lista.size(); i++) {
@@ -33,6 +34,11 @@ public class Lista {
 		for(int i = 0; i<lista.size(); i++) {
 			System.out.println(lista.get(i));
 		}
+		System.out.println();
+		for(Usuario u: lista) {
+			System.out.println(u);
+		}
+		System.out.println(lista.contains(new Usuario("Gabriel")));
 		
 	}
 
